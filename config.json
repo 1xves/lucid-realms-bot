@@ -1,0 +1,86 @@
+{
+  "openai": {
+    "api_key": "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"
+  },
+  "youtube": {
+    "client_id": "203561642148-nlugb6cn2pv08rspo1mrhl70l3kef9dc.apps.googleusercontent.com",
+    "client_secret": "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",
+    "refresh_token": "1//06aCRNpMAiUgtCgYIARAAGAYSNwF-L9IrjcKs-ILw6xkdFpS-7TToveo-uIHfnHTilScf5zIU-FS3NSzhAVIZpHKpHFoSeZt50UE"
+  },
+  "channel_name": "LUCID REALMS",
+  "monetization_goal": {
+    "target": "YouTube Partner Program",
+    "requirements": {
+      "subscribers": 1000,
+      "shorts_views_90_days": 10000000
+    },
+    "current": {
+      "subscribers": 0,
+      "shorts_views_90_days": 49,
+      "last_updated": "2026-03-29"
+    },
+    "strategy": "Shorts path \u2014 10M views in 90 days. Post 3x/day at peak hours. Maximize rewatch rate and shares to accelerate algorithmic distribution."
+  },
+  "channel_theme": "Surreal AI art: cinematic journeys through impossible worlds. Each Short is a 45-second visual odyssey \u2014 glitching dreamscapes, cosmic horror, bioluminescent alien worlds, and breathtaking sci-fi realms. Use strong curiosity-gap titles with an emoji. Open every Short with a jaw-dropping scene that stops the scroll. Narration should be poetic and mysterious, 8-12 words per line. Visual style: deep purple, electric blue, gold, teal. Make each scene flow into the next like a fever dream. Optimize for rewatch loops \u2014 end on an image that makes viewers want to start over.",
+  "content_strategy": {
+    "top_performing_themes": [
+      "surreal dreamscape",
+      "cosmic horror",
+      "bioluminescent worlds",
+      "impossible architecture",
+      "alien civilizations",
+      "time collapsing"
+    ],
+    "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
+    "optimal_length_seconds": 45,
+    "color_palette": [
+      "deep purple",
+      "electric blue",
+      "gold",
+      "bioluminescent teal",
+      "midnight black"
+    ],
+    "avoid": [
+      "generic sci-fi",
+      "flat lighting",
+      "slow openings",
+      "text-heavy scenes"
+    ],
+    "uploads_per_day": 3,
+    "upload_times": [
+      "09:00",
+      "15:00",
+      "20:00"
+    ],
+    "seo": {
+      "title_format": "[EMOJI] [CURIOSITY-GAP HOOK] #Shorts",
+      "description_template": "\ud83c\udf0c Welcome to LUCID REALMS \u2014 where AI dreams become reality.\n\n[2-3 sentence immersive description of the video]\n\n\ud83d\udd14 Subscribe for daily surreal AI journeys \u2192 @LucidRealms\n\n#AIArt #Shorts #SurrealArt #AIVideo #CosmicHorror #DreamWorld #SciFiArt #AIGenerated #VisualArt #SurrealDream",
+      "tags": [
+        "AI art",
+        "surreal art",
+        "AI video",
+        "shorts",
+        "cosmic horror",
+        "dreamscape",
+        "sci-fi art",
+        "AI generated",
+        "bioluminescent",
+        "impossible worlds",
+        "visual odyssey",
+        "lucid realms",
+        "alien worlds",
+        "AI animation"
+      ]
+    },
+    "engagement_cta": "End narration with: 'Subscribe to enter the next realm.' \u2014 also pin a comment: '\ud83c\udf0c Which world would you enter? Comment below \ud83d\udc47'",
+    "viral_triggers": [
+      "unexpected scene transitions",
+      "loopable ending",
+      "unsettling beauty",
+      "questions that demand answers",
+      "scenes that look physically impossible"
+    ]
+  },
+  "output_dir": "./videos",
+  "privacy": "public"
+}

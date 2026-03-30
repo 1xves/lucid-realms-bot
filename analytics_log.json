@@ -1,0 +1,70 @@
+[
+  {
+    "date": "2026-03-28",
+    "channel_totals": {
+      "total_views": 0,
+      "total_likes": 0,
+      "total_comments": 0,
+      "subscriber_count": null
+    },
+    "video_count": 1,
+    "top_performer": null,
+    "worst_performer": null,
+    "avg_views": 0,
+    "avg_engagement_rate": "0%",
+    "key_insights": [
+      "First video uploaded to LUCID REALMS channel.",
+      "Evening slot (8 PM prime time) successfully posted.",
+      "Theme: Bioluminescent Worlds \u2014 expected high visual engagement.",
+      "Comment pinning requires youtube.force-ssl OAuth scope \u2014 needs re-auth."
+    ],
+    "todays_content_direction": "Channel launched. Evening Short live. Next: morning (9 AM) and afternoon (3 PM) posts to complete the 3x daily cadence.",
+    "uploads": [
+      {
+        "upload_slot": "evening",
+        "upload_time": "2026-03-29T04:39:48.078135Z",
+        "video_id": "Hil2rlw6uuc",
+        "video_url": "https://www.youtube.com/shorts/Hil2rlw6uuc",
+        "title": "\ud83c\udf0c Dive Into Bioluminescent Depths #Shorts",
+        "theme": "bioluminescent worlds",
+        "scenes_generated": 6,
+        "video_duration_seconds": 45,
+        "status": "uploaded",
+        "comment_pin_status": "skipped - insufficient OAuth scope (youtube.force-ssl required)",
+        "tags_count": 14
+      }
+    ]
+  },
+  {
+    "date": "2026-03-29",
+    "type": "daily_review",
+    "subscribers": 0,
+    "shorts_views_90_days": 49,
+    "pct_to_subscriber_goal": 0.0,
+    "pct_to_views_goal": 0.0005,
+    "projected_days_to_monetization": 204081,
+    "daily_avg_views": 49.0,
+    "top_themes": [
+      "bioluminescent worlds"
+    ],
+    "strategy_updates": "Day 1 channel launch. First video has 49 views in <24 hours \u2014 promising early traction. Bioluminescent worlds theme showing initial engagement. Priority: complete 3x/day upload cadence (morning + afternoon slots missing). Enable YouTube Analytics API for detailed reporting. Fix youtube.force-ssl OAuth scope for comment pinning. No underperformers to retire yet \u2014 too early.",
+    "winner_videos": [],
+    "video_stats": [
+      {
+        "video_id": "Hil2rlw6uuc",
+        "title": "\ud83c\udf0c Dive Into Bioluminescent Depths #Shorts",
+        "theme": "bioluminescent worlds",
+        "views": 49,
+        "likes": 0,
+        "comments": 0,
+        "engagement_rate": "0.0%",
+        "comment_rate": "0.0%"
+      }
+    ],
+    "notes": [
+      "YouTube Analytics API not enabled \u2014 using Data API v3 channel views as proxy for 90-day Shorts views.",
+      "Channel is <24 hours old; projections will stabilize after 7+ days of data.",
+      "Comment pinning still blocked \u2014 needs youtube.force-ssl OAuth scope."
+    ]
+  }
+]
