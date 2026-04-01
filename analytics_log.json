@@ -89,5 +89,28 @@
       "visual storytelling",
       "artistic exploration"
     ]
+  },
+  {
+    "date": "2026-04-01",
+    "time_utc": "16:18",
+    "slot": "morning",
+    "video_id": "86IMKKKCzL8",
+    "title_a": "What if Nature Became Digital Dreams?",
+    "title_b": "Explore a World Where Nature Glows!",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "surreal",
+      "AI art",
+      "bioluminescent",
+      "digital nature",
+      "dreamscape",
+      "impossible architecture",
+      "retro-futurism",
+      "hypnotic visuals",
+      "creative exploration",
+      "visual journey"
+    ]
   }
 ]
