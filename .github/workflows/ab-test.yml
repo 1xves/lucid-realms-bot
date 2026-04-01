@@ -1,0 +1,40 @@
+name: "🧪 A/B Title Test (Daily Noon ET)"
+
+on:
+  schedule:
+    - cron: "0 16 * * *"   # 12 PM EDT (UTC-4). Change to '0 17 * * *' for EST
+  workflow_dispatch:
+
+jobs:
+  abtest:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/1xves/lucid-realms-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run A/B title test
+        env:
+          OPENAI_API_KEY:         ${{ secrets.OPENAI_API_KEY }}
+          YOUTUBE_CLIENT_ID:      ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET:  ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN:  ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python ab_test.py
+
+      - name: Commit updated analytics log
+        run: |
+          git config --local user.email "lucid-realms-bot@users.noreply.github.com"
+          git config --local user.name "LUCID REALMS Bot"
+          git pull --rebase origin main
+          git add analytics_log.json
+          git diff --staged --quiet || git commit -m "🧪 A/B title test results [skip ci]"
+          git push
