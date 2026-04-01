@@ -38,6 +38,5 @@ jobs:
           git config --local user.name "LUCID REALMS Bot"
           git pull --rebase origin main
           git add analytics_log.json
-          git diff --staged --quiet || git commit -m "ðŸ“
- Evening upload log [skip ci]"
+          git diff --staged --quiet || git commit -m "Evening upload log [skip ci]"
           git push
