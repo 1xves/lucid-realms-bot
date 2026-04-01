@@ -112,5 +112,28 @@
       "creative exploration",
       "visual journey"
     ]
+  },
+  {
+    "date": "2026-04-01",
+    "time_utc": "21:31",
+    "slot": "afternoon",
+    "video_id": "ZRul8v7vf6M",
+    "title_a": "What if trees glowed like stars?",
+    "title_b": "Discover a world where nature sparks with light",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "SurrealArt",
+      "AIArt",
+      "Bioluminescence",
+      "DigitalNature",
+      "Dreamscape",
+      "RetroFuturism",
+      "CosmicArt",
+      "Impossibility",
+      "NatureArt",
+      "VisualHypnosis"
+    ]
   }
 ]
