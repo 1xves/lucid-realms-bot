@@ -1,27 +1,24 @@
-name: "☀️ Afternoon Short (3 PM ET)"
+name: "🌤 Afternoon Short (3 PM ET)"
 
 on:
   schedule:
-    - cron: "0 19 * * *"   # 3 PM EDT (UTC-4). Change to '0 20 * * *' for EST
+    - cron: "0 19 * * *"
   workflow_dispatch:
 
 jobs:
   upload:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/1xves/lucid-realms-bot:latest
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
-      packages: read
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Generate and upload Short
         env:
@@ -39,5 +36,5 @@ jobs:
           git config --local user.name "LUCID REALMS Bot"
           git pull --rebase origin main
           git add analytics_log.json
-          git diff --staged --quiet || git commit -m "📊 Afternoon upload log [skip ci]"
+          git diff --staged --quiet || git commit -m "Afternoon upload log [skip ci]"
           git push
