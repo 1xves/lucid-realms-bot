@@ -8,6 +8,11 @@ on:
 jobs:
   watch:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/1xves/lucid-realms-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
 
@@ -17,21 +22,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
       - name: Run milestone watcher
         env:
-          OPENAI_API_KEY:        ${{ secrets.OPENAI_API_KEY }}
-          YOUTUBE_CLIENT_ID:     ${{ secrets.YOUTUBE_CLIENT_ID }}
-          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
-          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          GH_PAT:                ${{ secrets.GH_PAT }}
+          OPENAI_API_KEY:         ${{ secrets.OPENAI_API_KEY }}
+          YOUTUBE_CLIENT_ID:      ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET:  ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN:  ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          GH_PAT:                 ${{ secrets.GH_PAT }}
         run: python milestone_watch.py
 
       - name: Commit updated files
