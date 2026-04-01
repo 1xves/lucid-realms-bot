@@ -2,26 +2,23 @@ name: "🔍 Weekly Trend Research (Monday 8 AM ET)"
 
 on:
   schedule:
-    - cron: "0 12 * * 1"   # 8 AM EDT (UTC-4). Change to '0 13 * * 1' for EST (UTC-5, Nov-Mar)
+    - cron: "0 12 * * 1"
   workflow_dispatch:
 
 jobs:
   research:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/1xves/lucid-realms-bot:latest
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
-      packages: read
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Run trend research
         env:
@@ -37,5 +34,5 @@ jobs:
           git config --local user.name "LUCID REALMS Bot"
           git pull --rebase origin main
           git add config.json
-          git diff --staged --quiet || git commit -m "🔍 Weekly trend research update [skip ci]"
+          git diff --staged --quiet || git commit -m "Trend research update [skip ci]"
           git push
