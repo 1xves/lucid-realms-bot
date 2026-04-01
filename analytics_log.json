@@ -66,5 +66,28 @@
       "Channel is <24 hours old; projections will stabilize after 7+ days of data.",
       "Comment pinning still blocked \u2014 needs youtube.force-ssl OAuth scope."
     ]
+  },
+  {
+    "date": "2026-04-01",
+    "time_utc": "05:55",
+    "slot": "evening",
+    "video_id": "F71wZcKc1ZY",
+    "title_a": "What Lies in the Depths of a Bioluminescent Dream?",
+    "title_b": "Dive into an Alien Bioluminescent Realm",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "surreal art",
+      "AI art",
+      "bioluminescence",
+      "dreamscape",
+      "cosmic horror",
+      "alien worlds",
+      "impossible architecture",
+      "fantasy",
+      "visual storytelling",
+      "artistic exploration"
+    ]
   }
 ]
