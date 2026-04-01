@@ -2,12 +2,17 @@ name: "☀️ Afternoon Short (3 PM ET)"
 
 on:
   schedule:
-    - cron: "0 19 * * *"   # 3 PM EDT (UTC-4). Change to '0 20 * * *' for EST (UTC-5, Nov–Mar)
+    - cron: "0 19 * * *"   # 3 PM EDT (UTC-4). Change to '0 20 * * *' for EST
   workflow_dispatch:
 
 jobs:
   upload:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/1xves/lucid-realms-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
 
@@ -17,31 +22,21 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-
-      - name: Install ffmpeg
-        run: sudo apt-get install -y ffmpeg
-
       - name: Generate and upload Short
         env:
-          OPENAI_API_KEY:        ${{ secrets.OPENAI_API_KEY }}
-          YOUTUBE_CLIENT_ID:     ${{ secrets.YOUTUBE_CLIENT_ID }}
-          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
-          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          UPLOAD_SLOT:           afternoon
+          OPENAI_API_KEY:         ${{ secrets.OPENAI_API_KEY }}
+          YOUTUBE_CLIENT_ID:      ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET:  ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN:  ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          UPLOAD_SLOT:            afternoon
+          RUNWAY_API_KEY:         ${{ secrets.RUNWAY_API_KEY }}
         run: python generate_and_upload.py
 
-      - name: Commit updated analytics log
+      - name: Commit analytics log
         run: |
           git config --local user.email "lucid-realms-bot@users.noreply.github.com"
           git config --local user.name "LUCID REALMS Bot"
           git pull --rebase origin main
           git add analytics_log.json
-          git diff --staged --quiet || git commit -m "📊 Analytics log — afternoon upload [skip ci]"
+          git diff --staged --quiet || git commit -m "📊 Afternoon upload log [skip ci]"
           git push
