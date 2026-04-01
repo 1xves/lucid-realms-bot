@@ -2,26 +2,23 @@ name: "📊 Daily Analytics Review (8 AM ET)"
 
 on:
   schedule:
-    - cron: "0 12 * * *"   # 8 AM EDT (UTC-4). Change to '0 13 * * *' for EST
+    - cron: "0 12 * * *"
   workflow_dispatch:
 
 jobs:
-  analytics:
+  review:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/1xves/lucid-realms-bot:latest
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
-      packages: read
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Run analytics review
         env:
@@ -30,14 +27,13 @@ jobs:
           YOUTUBE_CLIENT_ID:      ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET:  ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN:  ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          GH_PAT:                 ${{ secrets.GH_PAT }}
         run: python analytics_review.py
 
-      - name: Commit updated config and log
+      - name: Commit updated config
         run: |
           git config --local user.email "lucid-realms-bot@users.noreply.github.com"
           git config --local user.name "LUCID REALMS Bot"
           git pull --rebase origin main
-          git add config.json analytics_log.json
-          git diff --staged --quiet || git commit -m "📊 Daily analytics update [skip ci]"
+          git add config.json
+          git diff --staged --quiet || git commit -m "Analytics review update [skip ci]"
           git push
