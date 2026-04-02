@@ -27,7 +27,8 @@
       "surreal dreamscape",
       "bioluminescent worlds",
       "impossible architecture",
-      "add 'digital nature' and 'retro-futurism' from trend data"
+      "digital nature",
+      "retro-futurism"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -70,9 +71,9 @@
         "AI animation"
       ],
       "hooks": [
-        "'What if\u2026' scenarios",
-        "Looping visuals that create a hypnotic effect",
-        "Unexpected transformations from mundane to bizarre"
+        "'Witness the Unseen: [Theme]'",
+        "'What if [Theme] was Real?'",
+        "'Dive into the [Theme] Experience'"
       ]
     },
     "engagement_cta": "End narration with: 'Subscribe to enter the next realm.' \u2014 also pin a comment: '\ud83c\udf0c Which world would you enter? Comment below \ud83d\udc47'",
@@ -86,25 +87,26 @@
   },
   "output_dir": "./videos",
   "privacy": "public",
-  "last_strategy_update": "2026-04-01",
+  "last_strategy_update": "2026-04-02",
   "strategy_details": {
     "top_performing_themes": [
       "surreal dreamscape",
       "bioluminescent worlds",
       "impossible architecture",
-      "add 'digital nature' and 'retro-futurism' from trend data"
+      "digital nature",
+      "retro-futurism"
     ],
     "hooks_to_use": [
-      "'What if\u2026' scenarios",
-      "Looping visuals that create a hypnotic effect",
-      "Unexpected transformations from mundane to bizarre"
+      "'Witness the Unseen: [Theme]'",
+      "'What if [Theme] was Real?'",
+      "'Dive into the [Theme] Experience'"
     ],
     "avoid": [
-      "Themes lacking a visual 'wow' factor or immediate intrigue",
-      "Overly abstract concepts without clear visual representation"
+      "Avoid generic titles and descriptions that do not capture the viewer's curiosity",
+      "Avoid overusing the same visual style repeatedly"
     ],
-    "title_formula": "'Witness the [adjective] World of [theme] in 15 Seconds'",
-    "priority_action": "Focus on creating visually striking content that capitalizes on popular trends like 'digital nature' and 'retro-futurism' to boost engagement.",
-    "monetization_note": "Focus on increasing viewership and engagement to progress towards YPP eligibility."
+    "title_formula": "'Explore [Adjective] [Theme] in Seconds'",
+    "priority_action": "Collaborate with other creators or influencers to increase visibility and engagement.",
+    "monetization_note": "Progress towards YPP Shorts requirements is currently at 0%; focus on increasing views and subscribers."
   }
 }
