@@ -158,5 +158,28 @@
       "fantasy art",
       "creative shorts"
     ]
+  },
+  {
+    "date": "2026-04-02",
+    "time_utc": "16:17",
+    "slot": "morning",
+    "video_id": "XqIK3_tmiWU",
+    "title_a": "Witness the Unseen: Bioluminescent Worlds Awaken",
+    "title_b": "What if Bioluminescent Dreams Came to Life?",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "surreal art",
+      "AI generated",
+      "bioluminescent",
+      "dreamscape",
+      "fantasy art",
+      "impossible architecture",
+      "digital nature",
+      "retro-futurism",
+      "visual art",
+      "shorts"
+    ]
   }
 ]
