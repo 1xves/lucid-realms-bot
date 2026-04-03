@@ -227,5 +227,28 @@
       "glow",
       "artsy"
     ]
+  },
+  {
+    "date": "2026-04-03",
+    "time_utc": "15:32",
+    "slot": "morning",
+    "video_id": "QC-H_i7VCJU",
+    "title_a": "Explore the Unseen: Bioluminescent Forests",
+    "title_b": "Witness the Unimaginable: Glowing Dreamscapes",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "surreal art",
+      "AI-generated",
+      "dreamscape",
+      "bioluminescent",
+      "fantasy",
+      "digital art",
+      "mythical creatures",
+      "artistic",
+      "nature",
+      "explore the unseen"
+    ]
   }
 ]
