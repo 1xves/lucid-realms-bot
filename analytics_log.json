@@ -204,5 +204,28 @@
       "impossible architecture",
       "light and color"
     ]
+  },
+  {
+    "date": "2026-04-03",
+    "time_utc": "05:58",
+    "slot": "evening",
+    "video_id": "PKCdSOO2lU8",
+    "title_a": "Witness the Unseen: Bioluminescent Forests Awaken",
+    "title_b": "What if Nature Glowed in the Dark?",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "bioluminescence",
+      "surrealism",
+      "AIart",
+      "nature",
+      "dreamscape",
+      "fantasy",
+      "visualart",
+      "impossiblearchitecture",
+      "glow",
+      "artsy"
+    ]
   }
 ]
