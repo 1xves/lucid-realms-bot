@@ -28,8 +28,9 @@
       "bioluminescent worlds",
       "impossible architecture",
       "digital nature",
-      "retro-futurism",
-      "AI-generated mythical creatures"
+      "AI-generated mythical creatures",
+      "surreal caf\u00e9 scenes",
+      "mythical sky events"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -110,5 +111,26 @@
     "title_formula": "Discover the <adjective> <theme> that Defies Reality",
     "priority_action": "Increase cross-promotion on social media platforms and engage with niche art communities to build initial audience base.",
     "monetization_note": "Focus on building subscriber base and engagement to progress towards YouTube Partner Program eligibility."
+  },
+  "trend_research": {
+    "last_updated": "2026-04-03",
+    "trending_themes": [
+      "surreal caf\u00e9 scenes",
+      "mythical sky events"
+    ],
+    "declining_themes": [
+      "retro-futurism"
+    ],
+    "viral_hook_patterns": [
+      "Mesmerizing transformations",
+      "Incredible slow-motion effects",
+      "Mystical creature arrivals",
+      "Ultra-realistic surreal effects"
+    ],
+    "title_insights": "Effective titles often start with a captivating event or character followed by a unique twist, e.g., 'The Day the Sky Whales Arrived... \ud83c\udf0c\ud83d\udc0b'.",
+    "visual_style_trends": "There is a growing interest in ultra-realistic textures combined with surreal elements, such as realistic jelly effects or detailed environmental transformations.",
+    "competitor_gaps": "No one is exploring 'surreal AI travel guides' that take viewers on a tour through these dreamscapes with a narrative style.",
+    "weekly_recommendation": "Focus on integrating surreal caf\u00e9 scenes with mythical sky events. Sample title: 'When the Caf\u00e9 Met the Sky Whales... \u2615\ud83d\udc0b'.",
+    "sources_summary": "This week, YouTube trends highlighted a fascination with surreal portrayals of everyday scenes, especially through the lens of AI art. Additionally, there is a clear interest in combining realism with surrealism to create captivating and otherworldly visuals."
   }
 }
