@@ -28,7 +28,8 @@
       "bioluminescent worlds",
       "impossible architecture",
       "digital nature",
-      "retro-futurism"
+      "retro-futurism",
+      "AI-generated mythical creatures"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -71,9 +72,9 @@
         "AI animation"
       ],
       "hooks": [
-        "'Witness the Unseen: [Theme]'",
-        "'What if [Theme] was Real?'",
-        "'Dive into the [Theme] Experience'"
+        "Explore the Unseen: <theme>",
+        "Witness the Unimaginable: <theme>",
+        "Dive into the Surreal: <theme>"
       ]
     },
     "engagement_cta": "End narration with: 'Subscribe to enter the next realm.' \u2014 also pin a comment: '\ud83c\udf0c Which world would you enter? Comment below \ud83d\udc47'",
@@ -87,26 +88,27 @@
   },
   "output_dir": "./videos",
   "privacy": "public",
-  "last_strategy_update": "2026-04-02",
+  "last_strategy_update": "2026-04-03",
   "strategy_details": {
     "top_performing_themes": [
       "surreal dreamscape",
       "bioluminescent worlds",
       "impossible architecture",
       "digital nature",
-      "retro-futurism"
+      "retro-futurism",
+      "AI-generated mythical creatures"
     ],
     "hooks_to_use": [
-      "'Witness the Unseen: [Theme]'",
-      "'What if [Theme] was Real?'",
-      "'Dive into the [Theme] Experience'"
+      "Explore the Unseen: <theme>",
+      "Witness the Unimaginable: <theme>",
+      "Dive into the Surreal: <theme>"
     ],
     "avoid": [
-      "Avoid generic titles and descriptions that do not capture the viewer's curiosity",
-      "Avoid overusing the same visual style repeatedly"
+      "Static images without dynamic elements",
+      "Overly complex narratives that distract from visual impact"
     ],
-    "title_formula": "'Explore [Adjective] [Theme] in Seconds'",
-    "priority_action": "Collaborate with other creators or influencers to increase visibility and engagement.",
-    "monetization_note": "Progress towards YPP Shorts requirements is currently at 0%; focus on increasing views and subscribers."
+    "title_formula": "Discover the <adjective> <theme> that Defies Reality",
+    "priority_action": "Increase cross-promotion on social media platforms and engage with niche art communities to build initial audience base.",
+    "monetization_note": "Focus on building subscriber base and engagement to progress towards YouTube Partner Program eligibility."
   }
 }
