@@ -250,5 +250,28 @@
       "nature",
       "explore the unseen"
     ]
+  },
+  {
+    "date": "2026-04-03",
+    "time_utc": "20:11",
+    "slot": "afternoon",
+    "video_id": "dSK7gqT-s6o",
+    "title_a": "Witness the Unimaginable: Bioluminescent Forests",
+    "title_b": "Explore the Unseen: Living Light in Nature",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "SurrealArt",
+      "BioluminescentNature",
+      "AIArt",
+      "Dreamscape",
+      "MythicalCreatures",
+      "DigitalArt",
+      "FantasyWorld",
+      "VisualArt",
+      "Exploration",
+      "NatureArt"
+    ]
   }
 ]
