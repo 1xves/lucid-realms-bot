@@ -1,0 +1,49 @@
+name: "🔍 Performance Monitor (Daily 10 AM ET)"
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/1xves/lucid-realms-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      packages: read
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run performance monitor
+        env:
+          OPENAI_API_KEY:         ${{ secrets.OPENAI_API_KEY }}
+          YOUTUBE_CLIENT_ID:      ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET:  ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN:  ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python performance_monitor.py
+
+      - name: Commit changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global --add safe.directory "*"
+          git config --local user.email "lucid-realms-bot@users.noreply.github.com"
+          git config --local user.name "LUCID REALMS Bot"
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
+          git stash
+          git pull --rebase origin main
+          git stash pop
+          git add config.json analytics_log.json
+          git diff --staged --quiet || git commit -m "Performance monitor update [skip ci]"
+          git push
