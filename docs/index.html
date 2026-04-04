@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUCID REALMS — Analytics Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0a0a12;--card:#12121e;--border:#1e1e36;--purple:#7c3aed;--purple-light:#a78bfa;--cyan:#06b6d4;--green:#10b981;--red:#ef4444;--text:#e2e8f0;--muted:#64748b}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
+  header{background:linear-gradient(135deg,#0f0f1a 0%,#1a0a2e 100%);border-bottom:1px solid var(--border);padding:24px 32px;display:flex;align-items:center;justify-content:space-between}
+  header h1{font-size:1.5rem;font-weight:700;letter-spacing:.05em}
+  header h1 span{color:var(--purple-light)}
+  .last-updated{font-size:.75rem;color:var(--muted)}
+  main{max-width:1200px;margin:0 auto;padding:32px 24px}
+  .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:32px}
+  .stat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center}
+  .stat-card .label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+  .stat-card .value{font-size:2rem;font-weight:700;color:var(--purple-light)}
+  .stat-card .sub{font-size:.75rem;color:var(--muted);margin-top:4px}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+  @media(max-width:768px){.grid-2{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px}
+  .card h2{font-size:1rem;font-weight:600;margin-bottom:20px;color:var(--purple-light);display:flex;align-items:center;gap:8px}
+  .theme-row{margin-bottom:14px}
+  .theme-label{display:flex;justify-content:space-between;font-size:.8rem;margin-bottom:5px}
+  .theme-tag{color:var(--text)}.theme-count{color:var(--muted)}
+  .bar-track{background:var(--border);border-radius:4px;height:8px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--purple),var(--cyan));transition:width .8s ease}
+  .ab-table{width:100%;border-collapse:collapse;font-size:.8rem}
+  .ab-table th{text-align:left;padding:8px 10px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--border)}
+  .ab-table td{padding:10px;border-bottom:1px solid #1a1a2e;vertical-align:top;line-height:1.4}
+  .ab-table tr:last-child td{border-bottom:none}
+  .badge{display:inline-block;padding:2px 8px;border-radius:99px;font-size:.7rem;font-weight:600}
+  .badge-a{background:rgba(124,58,237,.2);color:var(--purple-light)}
+  .badge-b{background:rgba(6,182,212,.2);color:var(--cyan)}
+  .badge-pending{background:rgba(100,116,139,.2);color:var(--muted)}
+  .upload-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);align-items:flex-start}
+  .upload-item:last-child{border-bottom:none}
+  .slot-dot{width:10px;height:10px;border-radius:50%;margin-top:5px;flex-shrink:0}
+  .slot-morning{background:#f59e0b}.slot-afternoon{background:var(--cyan)}.slot-evening{background:var(--purple-light)}
+  .upload-title{font-size:.85rem;font-weight:500;margin-bottom:3px}
+  .upload-meta{font-size:.72rem;color:var(--muted)}
+  .yt-link{color:var(--purple-light);text-decoration:none;font-size:.72rem}
+  .yt-link:hover{text-decoration:underline}
+  .empty{color:var(--muted);font-size:.85rem;text-align:center;padding:32px}
+  .loading{color:var(--muted);font-size:.85rem;padding:16px 0}
+  .motion-badge{display:inline-block;padding:1px 6px;border-radius:4px;font-size:.65rem;background:rgba(16,185,129,.15);color:var(--green);margin-left:6px}
+  canvas{max-height:220px}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>🌀 LUCID <span>REALMS</span></h1><div class="last-updated" id="lastUpdated">Loading…</div></div>
+  <div style="font-size:.8rem;color:var(--muted)">Auto-updates daily</div>
+</header>
+<main>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="label">Total Uploads</div><div class="value" id="statTotal">—</div><div class="sub">all time</div></div>
+    <div class="stat-card"><div class="label">This Week</div><div class="value" id="statWeek">—</div><div class="sub">last 7 days</div></div>
+    <div class="stat-card"><div class="label">A/B Tests Run</div><div class="value" id="statAB">—</div><div class="sub">titles tested</div></div>
+    <div class="stat-card"><div class="label">Motion Videos</div><div class="value" id="statMotion">—</div><div class="sub">Runway animated</div></div>
+    <div class="stat-card"><div class="label">Unique Themes</div><div class="value" id="statThemes">—</div><div class="sub">topics covered</div></div>
+  </div>
+  <div class="grid-2">
+    <div class="card"><h2>🎨 Top Themes Used</h2><div id="themeList"><div class="loading">Loading…</div></div></div>
+    <div class="card"><h2>📅 Uploads by Time Slot</h2><canvas id="slotChart"></canvas></div>
+  </div>
+  <div class="card" style="margin-bottom:24px">
+    <h2>🧪 A/B Title Test Results</h2>
+    <div style="overflow-x:auto"><table class="ab-table"><thead><tr><th>Date</th><th>Title A (original)</th><th>Title B (variant)</th><th>Winner</th></tr></thead><tbody id="abTableBody"><tr><td colspan="4" class="empty">Loading…</td></tr></tbody></table></div>
+  </div>
+  <div class="card"><h2>🎬 Recent Uploads</h2><div id="uploadFeed"><div class="loading">Loading…</div></div></div>
+</main>
+<script>
+const RAW='https://raw.githubusercontent.com/1xves/lucid-realms-bot/main/analytics_log.json';
+const YT='https://youtube.com/watch?v=';
+async function load(){try{const r=await fetch(RAW+'?t='+Date.now());if(!r.ok)throw 0;return r.json()}catch{return null}}
+function themes(tags,titles){
+  const kw=['cosmic','horror','surreal','bioluminescent','liminal','dreamcore','void','celestial','ethereal','eldritch','nebula','abyss','fractal','crystal','aurora','forest','ocean','quantum','neural','ancient','portal','dimension'];
+  const c={};
+  (tags||[]).forEach(t=>{const l=t.toLowerCase();kw.forEach(k=>{if(l.includes(k))c[k]=(c[k]||0)+1})});
+  (titles||[]).forEach(t=>{if(!t)return;const l=t.toLowerCase();kw.forEach(k=>{if(l.includes(k))c[k]=(c[k]||0)+0.5})});
+  return c;
+}
+function render(data){
+  if(!data||!data.length){
+    ['themeList','uploadFeed'].forEach(id=>document.getElementById(id).innerHTML='<div class="empty">No uploads yet — check back after the first run.</div>');
+    document.getElementById('abTableBody').innerHTML='<tr><td colspan="4" class="empty">No data yet.</td></tr>';
+    ['statTotal','statWeek','statAB','statMotion','statThemes'].forEach(id=>document.getElementById(id).textContent='0');
+    document.getElementById('lastUpdated').textContent='No uploads yet';return;
+  }
+  const s=[...data].sort((a,b)=>(b.date+b.time_utc).localeCompare(a.date+a.time_utc));
+  const wa=new Date(Date.now()-7*864e5);
+  document.getElementById('statTotal').textContent=data.length;
+  document.getElementById('statWeek').textContent=data.filter(e=>new Date(e.date)>=wa).length;
+  document.getElementById('statAB').textContent=data.filter(e=>e.ab_tested).length;
+  document.getElementById('statMotion').textContent=data.filter(e=>e.used_motion).length;
+  document.getElementById('lastUpdated').textContent='Last upload: '+s[0].date;
+  // Theme counts
+  const tc={};
+  data.forEach(e=>{const r=themes(e.tags,[e.title_a,e.title_b]);Object.entries(r).forEach(([k,v])=>tc[k]=(tc[k]||0)+v)});
+  const top=Object.entries(tc).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  document.getElementById('statThemes').textContent=top.length;
+  const mx=top[0]?.[1]||1;
+  document.getElementById('themeList').innerHTML=top.length
+    ?top.map(([t,c])=>`<div class="theme-row"><div class="theme-label"><span class="theme-tag">${t}</span><span class="theme-count">${Math.round(c)} vids</span></div><div class="bar-track"><div class="bar-fill" style="width:${(c/mx*100).toFixed(1)}%"></div></div></div>`).join('')
+    :'<div class="empty">Not enough data yet.</div>';
+  // Slot chart
+  const sc={morning:0,afternoon:0,evening:0};
+  data.forEach(e=>{if(sc[e.slot]!==undefined)sc[e.slot]++});
+  new Chart(document.getElementById('slotChart'),{type:'doughnut',data:{labels:['Morning 9AM','Afternoon 3PM','Evening 8PM'],datasets:[{data:[sc.morning,sc.afternoon,sc.evening],backgroundColor:['#f59e0b','#06b6d4','#7c3aed'],borderColor:'#12121e',borderWidth:3}]},options:{plugins:{legend:{labels:{color:'#94a3b8',font:{size:11}}}},cutout:'65%'}});
+  // A/B table
+  const ab=s.filter(e=>e.title_b);
+  document.getElementById('abTableBody').innerHTML=ab.length
+    ?ab.slice(0,15).map(e=>{
+        let w='<span class="badge badge-pending">Pending</span>';
+        if(e.ab_tested){const win=e.active_title==='b';w=`<span class="badge ${win?'badge-b':'badge-a'}">${win?'B won':'A won'}</span>${e.ctr_a||e.ctr_b?`<br><span style="font-size:.68rem;color:var(--muted)">CTR A:${((e.ctr_a||0)*100).toFixed(1)}% B:${((e.ctr_b||0)*100).toFixed(1)}%</span>`:''}`}
+        return `<tr><td style="white-space:nowrap;color:var(--muted)">${e.date}</td><td><span class="badge badge-a">A</span> ${e.title_a||'—'}</td><td><span class="badge badge-b">B</span> ${e.title_b||'—'}</td><td>${w}</td></tr>`;
+      }).join('')
+    :'<tr><td colspan="4" class="empty">No A/B results yet — tests run 20-52h after upload.</td></tr>';
+  // Feed
+  document.getElementById('uploadFeed').innerHTML=s.slice(0,20).map(e=>`
+    <div class="upload-item"><div class="slot-dot slot-${e.slot}"></div><div style="flex:1;min-width:0">
+    <div class="upload-title">${e.title_a||'Untitled'}${e.used_motion?'<span class="motion-badge">Runway</span>':''}</div>
+    <div class="upload-meta">${e.date} · ${e.slot}${e.video_id?` · <a class="yt-link" href="${YT}${e.video_id}" target="_blank">Watch ↗</a>`:''}</div>
+    </div></div>`).join('');
+}
+load().then(render);
+</script>
+</body></html>
