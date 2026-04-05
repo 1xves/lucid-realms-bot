@@ -24,13 +24,14 @@
   "channel_theme": "Surreal AI art: cinematic journeys through impossible worlds. Each Short is a 45-second visual odyssey \u2014 glitching dreamscapes, cosmic horror, bioluminescent alien worlds, and breathtaking sci-fi realms. Use strong curiosity-gap titles with an emoji. Open every Short with a jaw-dropping scene that stops the scroll. Narration should be poetic and mysterious, 8-12 words per line. Visual style: deep purple, electric blue, gold, teal. Make each scene flow into the next like a fever dream. Optimize for rewatch loops \u2014 end on an image that makes viewers want to start over.",
   "content_strategy": {
     "top_performing_themes": [
-      "surreal dreamscape",
-      "bioluminescent worlds",
-      "impossible architecture",
-      "digital nature",
-      "AI-generated mythical creatures",
       "surreal caf\u00e9 scenes",
-      "mythical sky events"
+      "mythical sky events",
+      "surreal dreamscape",
+      "AI-generated mythical creatures",
+      "surreal AI travel guides",
+      "impossible architecture",
+      "color-shifting landscapes",
+      "liminal space reimaginings"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -73,9 +74,11 @@
         "AI animation"
       ],
       "hooks": [
-        "Explore the Unseen: <theme>",
-        "Witness the Unimaginable: <theme>",
-        "Dive into the Surreal: <theme>"
+        "Imagine if...",
+        "What if you could...",
+        "Journey with us to...",
+        "[2-3 second jaw-drop visual] + minimal text overlay",
+        "This place doesn't exist... yet"
       ]
     },
     "engagement_cta": "End narration with: 'Subscribe to enter the next realm.' \u2014 also pin a comment: '\ud83c\udf0c Which world would you enter? Comment below \ud83d\udc47'",
@@ -89,28 +92,52 @@
   },
   "output_dir": "./videos",
   "privacy": "public",
-  "last_strategy_update": "2026-04-03",
+  "last_strategy_update": "2026-04-05",
   "strategy_details": {
     "top_performing_themes": [
+      "surreal caf\u00e9 scenes",
+      "mythical sky events",
       "surreal dreamscape",
-      "bioluminescent worlds",
+      "AI-generated mythical creatures",
+      "surreal AI travel guides",
       "impossible architecture",
-      "digital nature",
-      "retro-futurism",
-      "AI-generated mythical creatures"
+      "color-shifting landscapes",
+      "liminal space reimaginings"
     ],
     "hooks_to_use": [
-      "Explore the Unseen: <theme>",
-      "Witness the Unimaginable: <theme>",
-      "Dive into the Surreal: <theme>"
+      "Imagine if...",
+      "What if you could...",
+      "Journey with us to...",
+      "[2-3 second jaw-drop visual] + minimal text overlay",
+      "This place doesn't exist... yet"
     ],
     "avoid": [
-      "Static images without dynamic elements",
-      "Overly complex narratives that distract from visual impact"
+      "Generic AI art without narrative context",
+      "Overly abstract themes without clear visuals",
+      "Long explanatory text (Shorts viewers scroll fast)",
+      "Repeating the same visual style across consecutive uploads",
+      "Ignoring trending audio\u2014misaligned sound design kills retention"
     ],
-    "title_formula": "Discover the <adjective> <theme> that Defies Reality",
-    "priority_action": "Increase cross-promotion on social media platforms and engage with niche art communities to build initial audience base.",
-    "monetization_note": "Focus on building subscriber base and engagement to progress towards YouTube Partner Program eligibility."
+    "title_formula": "Discover [Theme] as You've Never Seen Before: [Unique Twist]",
+    "refined_title_formula_alt": "[Emotional reaction word] [specific visual noun] [teases transformation or discovery]",
+    "title_examples": [
+      "Surreal Caf\u00e9s Where Time Flows Backward",
+      "This Sky Shouldn't Exist (But It Does)",
+      "Walking Through Dreams That Feel Real"
+    ],
+    "priority_action": "Before external collaboration: establish internal consistency. Upload 2-3x per week with A/B testing on hooks, trending audio alignment, and thumbnail-style stills. Collabs are premature without proof of concept. Build 100-200 organic subs first, then approach micro-creators (10k-100k subs) in adjacent niches (AI art, surrealism, animation).",
+    "critical_gaps_to_address": [
+      "No mention of Shorts algorithm optimization: use trending sounds, 0-3 second hook, vertical composition",
+      "YPP path unclear: need 1,000 subs + 10M watch hours (Shorts). Current trajectory won't hit this without strategy shift",
+      "No retention/engagement metrics baseline: measure average view duration % and click-through rates on each hook type",
+      "Cross-niche collaboration: consider AI communities (not just surreal art creators) since AI art is the channel's unique lever"
+    ],
+    "monetization_note": "Focus on building a subscriber base to progress towards YPP eligibility. Interim: explore Patreon or Ko-fi for exclusive AI prompts/behind-the-scenes content to generate revenue while scaling.",
+    "90_day_milestones": [
+      "Days 1-30: 500 subs, establish upload cadence, identify top 2 performing hook types",
+      "Days 31-60: 1,500 subs, refine title formulas based on click-through data, launch first collab",
+      "Days 61-90: 3,000+ subs, document methodology for replication, assess YPP path feasibility"
+    ]
   },
   "trend_research": {
     "last_updated": "2026-04-03",
