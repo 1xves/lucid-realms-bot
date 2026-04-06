@@ -372,5 +372,28 @@
       "Imagination",
       "Fantasy"
     ]
+  },
+  {
+    "date": "2026-04-06",
+    "time_utc": "06:23",
+    "slot": "evening",
+    "video_id": "wcPbdkoeI6o",
+    "title_a": "When the Caf\u00e9 Meets the Celestial Whales...",
+    "title_b": "A Caf\u00e9 Under the Ethereal Sky",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "SurrealArt",
+      "AICreativity",
+      "CosmicCaf\u00e9",
+      "MythicalCreatures",
+      "Dreamscape",
+      "SkyWhales",
+      "VisualArt",
+      "FantasyWorld",
+      "LiminalSpaces",
+      "AIArtTrends"
+    ]
   }
 ]
