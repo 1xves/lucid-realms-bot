@@ -26,12 +26,11 @@
     "top_performing_themes": [
       "surreal caf\u00e9 scenes",
       "mythical sky events",
-      "surreal dreamscape",
-      "AI-generated mythical creatures",
       "surreal AI travel guides",
+      "liminal space reimaginings",
       "impossible architecture",
-      "color-shifting landscapes",
-      "liminal space reimaginings"
+      "paradoxical landscapes",
+      "dreamlogic transformations"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -74,11 +73,11 @@
         "AI animation"
       ],
       "hooks": [
-        "Imagine if...",
-        "What if you could...",
-        "Journey with us to...",
-        "[2-3 second jaw-drop visual] + minimal text overlay",
-        "This place doesn't exist... yet"
+        "What if [surreal element] met [unexpected element]?",
+        "Experience [theme] from a dreamlike perspective...",
+        "Discover the [mysterious/surreal element] hidden in plain sight",
+        "[Character/perspective] just realized [surreal twist]",
+        "This place exists... but not how you think"
       ]
     },
     "engagement_cta": "End narration with: 'Subscribe to enter the next realm.' \u2014 also pin a comment: '\ud83c\udf0c Which world would you enter? Comment below \ud83d\udc47'",
@@ -92,52 +91,42 @@
   },
   "output_dir": "./videos",
   "privacy": "public",
-  "last_strategy_update": "2026-04-05",
+  "last_strategy_update": "2026-04-06",
   "strategy_details": {
     "top_performing_themes": [
       "surreal caf\u00e9 scenes",
       "mythical sky events",
-      "surreal dreamscape",
-      "AI-generated mythical creatures",
       "surreal AI travel guides",
+      "liminal space reimaginings",
       "impossible architecture",
-      "color-shifting landscapes",
-      "liminal space reimaginings"
+      "paradoxical landscapes",
+      "dreamlogic transformations"
     ],
     "hooks_to_use": [
-      "Imagine if...",
-      "What if you could...",
-      "Journey with us to...",
-      "[2-3 second jaw-drop visual] + minimal text overlay",
-      "This place doesn't exist... yet"
+      "What if [surreal element] met [unexpected element]?",
+      "Experience [theme] from a dreamlike perspective...",
+      "Discover the [mysterious/surreal element] hidden in plain sight",
+      "[Character/perspective] just realized [surreal twist]",
+      "This place exists... but not how you think"
     ],
     "avoid": [
-      "Generic AI art without narrative context",
-      "Overly abstract themes without clear visuals",
-      "Long explanatory text (Shorts viewers scroll fast)",
-      "Repeating the same visual style across consecutive uploads",
-      "Ignoring trending audio\u2014misaligned sound design kills retention"
+      "Overly abstract content with no narrative or focal point",
+      "Themes without clear visual intrigue or novelty",
+      "Repetitive concepts without a fresh twist",
+      "Slow pacing in first 2 seconds (critical for Shorts)",
+      "Generic AI art without intentional surreal logic",
+      "Dialogue-heavy Shorts that require subtitles to understand"
     ],
-    "title_formula": "Discover [Theme] as You've Never Seen Before: [Unique Twist]",
-    "refined_title_formula_alt": "[Emotional reaction word] [specific visual noun] [teases transformation or discovery]",
-    "title_examples": [
-      "Surreal Caf\u00e9s Where Time Flows Backward",
-      "This Sky Shouldn't Exist (But It Does)",
-      "Walking Through Dreams That Feel Real"
-    ],
-    "priority_action": "Before external collaboration: establish internal consistency. Upload 2-3x per week with A/B testing on hooks, trending audio alignment, and thumbnail-style stills. Collabs are premature without proof of concept. Build 100-200 organic subs first, then approach micro-creators (10k-100k subs) in adjacent niches (AI art, surrealism, animation).",
-    "critical_gaps_to_address": [
-      "No mention of Shorts algorithm optimization: use trending sounds, 0-3 second hook, vertical composition",
-      "YPP path unclear: need 1,000 subs + 10M watch hours (Shorts). Current trajectory won't hit this without strategy shift",
-      "No retention/engagement metrics baseline: measure average view duration % and click-through rates on each hook type",
-      "Cross-niche collaboration: consider AI communities (not just surreal art creators) since AI art is the channel's unique lever"
-    ],
-    "monetization_note": "Focus on building a subscriber base to progress towards YPP eligibility. Interim: explore Patreon or Ko-fi for exclusive AI prompts/behind-the-scenes content to generate revenue while scaling.",
-    "90_day_milestones": [
-      "Days 1-30: 500 subs, establish upload cadence, identify top 2 performing hook types",
-      "Days 31-60: 1,500 subs, refine title formulas based on click-through data, launch first collab",
-      "Days 61-90: 3,000+ subs, document methodology for replication, assess YPP path feasibility"
-    ]
+    "title_formula": "Discover the [surreal element] of [intriguing place/element] \ud83c\udf00\u2728",
+    "critical_refinements": {
+      "hook_sequencing": "Lead with visual intrigue in frame 1, add narrative hook by second 1. Most viewers decide in 1-2 seconds.",
+      "theme_depth": "Themes are solid but need internal logic\u2014surreal \u2260 random. Each video should have one clear 'what if' that drives the visuals.",
+      "engagement_blockers": "0% engagement suggests potential issues: Are captions clear? Is audio compelling or distracting? Are CTAs present? Test adding text overlays with curiosity gaps."
+    },
+    "priority_action": "Before scaling content, audit 3-5 existing videos for: (1) First-frame visual hook strength, (2) Viewer retention drop-off points via YouTube Analytics, (3) Whether narrative is self-explanatory without sound. Fix these before producing 50 new Shorts.",
+    "secondary_action": "Implement A/B testing: Post 2 videos weekly with identical theme but different hook approaches. Track which hook format performs better.",
+    "monetization_note": "Focus on engagement AND watch time simultaneously. YPP eligibility requires both 1K subs + 10M Shorts views in 90 days OR 1K subs + 4K watch hours. Low engagement suggests current content isn't retainable\u2014fix retention first, then scale production.",
+    "realistic_expectation": "With 26.45 avg views/video and 0% engagement, the channel is in the 'discovery phase.' Growth will be non-linear. Expect 2-4 weeks of testing before seeing meaningful traction, IF the above refinements work."
   },
   "trend_research": {
     "last_updated": "2026-04-03",
