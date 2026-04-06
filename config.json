@@ -27,9 +27,6 @@
       "surreal caf\u00e9 scenes",
       "mythical sky events",
       "surreal AI travel guides",
-      "liminal space reimaginings",
-      "impossible architecture",
-      "paradoxical landscapes",
       "dreamlogic transformations"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
@@ -87,7 +84,9 @@
       "unsettling beauty",
       "questions that demand answers",
       "scenes that look physically impossible"
-    ]
+    ],
+    "emergency_hook_style": "Use 'Mesmerizing transformations' and 'Mystical creature arrivals' to draw viewers in with captivating and unexpected events.",
+    "emergency_title_formula": "When [Event or Character] [Action or Twist]... [Emoji]"
   },
   "output_dir": "./videos",
   "privacy": "public",
@@ -148,5 +147,27 @@
     "competitor_gaps": "No one is exploring 'surreal AI travel guides' that take viewers on a tour through these dreamscapes with a narrative style.",
     "weekly_recommendation": "Focus on integrating surreal caf\u00e9 scenes with mythical sky events. Sample title: 'When the Caf\u00e9 Met the Sky Whales... \u2615\ud83d\udc0b'.",
     "sources_summary": "This week, YouTube trends highlighted a fascination with surreal portrayals of everyday scenes, especially through the lens of AI art. Additionally, there is a clear interest in combining realism with surrealism to create captivating and otherworldly visuals."
+  },
+  "performance_alert": {
+    "active": true,
+    "triggered_at": "2026-04-06",
+    "consecutive_low": 6,
+    "threshold_views": 100,
+    "diagnosis": "The recent videos are underperforming due to repetitive themes and titles that lack a strong hook, failing to capture audience interest. The titles and themes focus on bioluminescent forests, which do not align with current trending interests.",
+    "pivot_themes": [
+      "surreal caf\u00e9 scenes",
+      "mythical sky events",
+      "surreal AI travel guides"
+    ],
+    "themes_to_abandon": [
+      "liminal space reimaginings",
+      "impossible architecture",
+      "paradoxical landscapes"
+    ],
+    "new_hook_style": "Use 'Mesmerizing transformations' and 'Mystical creature arrivals' to draw viewers in with captivating and unexpected events.",
+    "new_visual_direction": "Shift to ultra-realistic textures combined with surreal elements, like realistic jelly effects and detailed environmental transformations.",
+    "urgent_title_formula": "When [Event or Character] [Action or Twist]... [Emoji]",
+    "confidence": "high",
+    "data_rationale": "The pivot is informed by trending themes, unexploited competitor gaps, and viral hook patterns that suggest a strong interest in surreal caf\u00e9 scenes and mythical sky events."
   }
 }
