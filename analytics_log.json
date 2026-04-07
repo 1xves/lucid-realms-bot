@@ -444,5 +444,28 @@
       "CreativeConcepts",
       "FantasyArt"
     ]
+  },
+  {
+    "date": "2026-04-07",
+    "time_utc": "06:09",
+    "slot": "evening",
+    "video_id": "itTLqbfS3SA",
+    "title_a": "When the Barista Became a Starry Sky... \u2728\u2615",
+    "title_b": "What if Your Caf\u00e9 Served Cosmic Beverages? \ud83c\udf0c",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "SurrealArt",
+      "AIArt",
+      "DreamLogic",
+      "Caf\u00e9Scenes",
+      "MythicalCreatures",
+      "SkyWhales",
+      "CosmicCafe",
+      "Surrealism",
+      "Dreamlike",
+      "FantasyArt"
+    ]
   }
 ]
