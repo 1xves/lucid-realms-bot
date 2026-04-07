@@ -27,7 +27,6 @@
       "surreal caf\u00e9 scenes",
       "mythical sky events",
       "surreal AI travel guides",
-      "impossible architecture",
       "dreamscape transformations"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
@@ -87,8 +86,8 @@
       "questions that demand answers",
       "scenes that look physically impossible"
     ],
-    "emergency_hook_style": "Use 'Mesmerizing transformations' and 'Mystical creature arrivals' to draw viewers in with captivating and unexpected events.",
-    "emergency_title_formula": "When [Event or Character] [Action or Twist]... [Emoji]"
+    "emergency_hook_style": "Mesmerizing transformations combined with mystical creature arrivals",
+    "emergency_title_formula": "The Day [Event/Character] [Unique Twist]... \ud83c\udf0c"
   },
   "output_dir": "./videos",
   "privacy": "public",
@@ -154,24 +153,21 @@
   },
   "performance_alert": {
     "active": true,
-    "triggered_at": "2026-04-06",
-    "consecutive_low": 6,
+    "triggered_at": "2026-04-07",
+    "consecutive_low": 8,
     "threshold_views": 100,
-    "diagnosis": "The recent videos are underperforming due to repetitive themes and titles that lack a strong hook, failing to capture audience interest. The titles and themes focus on bioluminescent forests, which do not align with current trending interests.",
+    "diagnosis": "The current content is underperforming because it lacks alignment with the latest viral hook patterns and trending title formats, while also failing to explore the uncovered angle of 'surreal AI travel guides' with a narrative style.",
     "pivot_themes": [
-      "surreal caf\u00e9 scenes",
-      "mythical sky events",
-      "surreal AI travel guides"
+      "surreal AI travel guides",
+      "mythical sky events"
     ],
     "themes_to_abandon": [
-      "liminal space reimaginings",
-      "impossible architecture",
-      "paradoxical landscapes"
+      "impossible architecture"
     ],
-    "new_hook_style": "Use 'Mesmerizing transformations' and 'Mystical creature arrivals' to draw viewers in with captivating and unexpected events.",
-    "new_visual_direction": "Shift to ultra-realistic textures combined with surreal elements, like realistic jelly effects and detailed environmental transformations.",
-    "urgent_title_formula": "When [Event or Character] [Action or Twist]... [Emoji]",
+    "new_hook_style": "Mesmerizing transformations combined with mystical creature arrivals",
+    "new_visual_direction": "Ultra-realistic textures combined with surreal elements, such as realistic jelly effects or detailed environmental transformations",
+    "urgent_title_formula": "The Day [Event/Character] [Unique Twist]... \ud83c\udf0c",
     "confidence": "high",
-    "data_rationale": "The pivot is informed by trending themes, unexploited competitor gaps, and viral hook patterns that suggest a strong interest in surreal caf\u00e9 scenes and mythical sky events."
+    "data_rationale": "This recommendation is driven by the identification of a competitor gap in 'surreal AI travel guides' and the observed popularity of combining realism with surrealism."
   }
 }
