@@ -27,7 +27,8 @@
       "surreal caf\u00e9 scenes",
       "mythical sky events",
       "surreal AI travel guides",
-      "dreamscape transformations"
+      "dreamscape architecture",
+      "impossible physics moments"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -70,12 +71,11 @@
         "AI animation"
       ],
       "hooks": [
-        "'What if...'",
-        "'Imagine a world where...'",
-        "'Journey through the surreal...'",
-        "Narrative storytelling with a twist",
-        "Pattern interrupts (sudden visual shifts)",
-        "Personal relatability angles ('When you realize...')"
+        "What if...? \ud83e\udd14",
+        "Witness the impossible... \ud83c\udf0c",
+        "Journey through the unknown... \ud83d\ude80",
+        "This shouldn't exist... \ud83d\udc41\ufe0f",
+        "Wait for the twist... \u2728"
       ]
     },
     "engagement_cta": "End narration with: 'Subscribe to enter the next realm.' \u2014 also pin a comment: '\ud83c\udf0c Which world would you enter? Comment below \ud83d\udc47'",
@@ -91,44 +91,43 @@
   },
   "output_dir": "./videos",
   "privacy": "public",
-  "last_strategy_update": "2026-04-07",
+  "last_strategy_update": "2026-04-08",
   "strategy_details": {
     "top_performing_themes": [
       "surreal caf\u00e9 scenes",
       "mythical sky events",
       "surreal AI travel guides",
-      "impossible architecture",
-      "dreamscape transformations"
+      "dreamscape architecture",
+      "impossible physics moments"
     ],
     "hooks_to_use": [
-      "'What if...'",
-      "'Imagine a world where...'",
-      "'Journey through the surreal...'",
-      "Narrative storytelling with a twist",
-      "Pattern interrupts (sudden visual shifts)",
-      "Personal relatability angles ('When you realize...')"
+      "What if...? \ud83e\udd14",
+      "Witness the impossible... \ud83c\udf0c",
+      "Journey through the unknown... \ud83d\ude80",
+      "This shouldn't exist... \ud83d\udc41\ufe0f",
+      "Wait for the twist... \u2728"
     ],
     "avoid": [
-      "Static imagery without narrative",
-      "Overly abstract concepts lacking relatability",
-      "Titles longer than 50 characters (YouTube Shorts truncate)",
-      "Generic AI art (needs distinctive visual style/branding)",
-      "Inconsistent upload schedule (kills algorithm momentum)"
+      "Overly abstract or nonsensical themes that confuse rather than intrigue",
+      "Vague titles without visual promise",
+      "Silent or ambient-only audio (Shorts users scroll with sound off, but narrative voiceover performs better)",
+      "Themes with no emotional anchor (surreal works best when grounded in feeling, not just visuals)"
     ],
-    "title_formula": "[Hook] [Surreal Element] in [Relatable Location] \ud83c\udf00",
-    "examples": [
-      "What if your caf\u00e9 was a portal? \ud83c\udf00\u2615",
-      "Imagine walking through impossible stairs \ud83c\udf00",
-      "When the sky remembers everything \ud83c\udf00"
+    "title_formula": "[Hook] [Theme] [Emotional Payoff] [Emoji]",
+    "examples_of_title_formula": [
+      "What if caf\u00e9s existed in clouds? \u2601\ufe0f",
+      "The sky just did something impossible \u2728",
+      "This travel guide breaks reality \ud83c\udf08"
     ],
-    "priority_action": "Before narrative optimization: establish visual consistency and posting cadence (3-4x weekly minimum). Without these fundamentals, narrative alone won't convert. Then layer in storytelling hooks that hit the 'awe + curiosity' formula proven on Shorts.",
-    "critical_gaps_in_original_strategy": [
-      "No mention of posting frequency (algorithm killer for 0 engagement)",
-      "No visual branding/consistency guidelines (viewers need to recognize your style)",
-      "No audience retention targets (avg 24 views suggests watch-time drop-off)",
-      "YPP focus premature\u2014prioritize 1K subs first with engagement metrics"
+    "priority_action": "Layer storytelling strategically: start with a strong visual hook (0-1 sec), add narrative voiceover that complements (not narrates) visuals, end with an emotional or thought-provoking statement. Test 3-5 second Shorts with different voice tones (mysterious, awestruck, curious).",
+    "secondary_actions": [
+      "Create a consistent visual style/color palette across videos to build channel recognition",
+      "Use pattern interrupts within videos (quick cuts, scale shifts) to stop scrolling",
+      "Post consistently (3-5x/week minimum) to signal activity to the algorithm",
+      "Respond to all comments within 24 hours to boost engagement metrics"
     ],
-    "monetization_note": "YPP eligibility requires 1K subs + 10M Shorts views in 90 days. Current 24 avg views = ~400 views/video needed to hit target. Focus on: (1) hook strength in first 0.5s, (2) posting consistency, (3) thumbnail/title clarity. Engagement metrics matter more than raw views for algorithmic lift."
+    "monetization_note": "Current 0% engagement is the blocker. YPP requires 1,000 subscribers + 10M Shorts views in 90 days. Focus on CTR (click-through rate) and AVD (average view duration) first. Strong hooks and voiceover should improve both, which signals quality to YouTube's algorithm and accelerates growth before worrying about monetization.",
+    "critical_gap_identified": "No A/B testing framework mentioned. Recommend testing: (1) Hook variations, (2) Voiceover tone/presence vs. music-only, (3) Video length (15s vs. 60s), (4) Posting time. Data will refine strategy faster than assumptions."
   },
   "trend_research": {
     "last_updated": "2026-04-03",
