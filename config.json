@@ -86,8 +86,8 @@
       "questions that demand answers",
       "scenes that look physically impossible"
     ],
-    "emergency_hook_style": "Mesmerizing transformations combined with mystical creature arrivals",
-    "emergency_title_formula": "The Day [Event/Character] [Unique Twist]... \ud83c\udf0c"
+    "emergency_hook_style": "Mystical creature arrivals followed by mesmerizing transformations",
+    "emergency_title_formula": "The Day [Event] Transformed into [Surreal Element]"
   },
   "output_dir": "./videos",
   "privacy": "public",
@@ -152,21 +152,21 @@
   },
   "performance_alert": {
     "active": true,
-    "triggered_at": "2026-04-07",
-    "consecutive_low": 8,
+    "triggered_at": "2026-04-08",
+    "consecutive_low": 11,
     "threshold_views": 100,
-    "diagnosis": "The current content is underperforming because it lacks alignment with the latest viral hook patterns and trending title formats, while also failing to explore the uncovered angle of 'surreal AI travel guides' with a narrative style.",
+    "diagnosis": "The current content is underperforming due to repetitive themes and titles that fail to differentiate from each other and capture viewer interest, coupled with an underutilization of trending visual styles and narrative techniques.",
     "pivot_themes": [
       "surreal AI travel guides",
       "mythical sky events"
     ],
     "themes_to_abandon": [
-      "impossible architecture"
+      "retro-futurism"
     ],
-    "new_hook_style": "Mesmerizing transformations combined with mystical creature arrivals",
-    "new_visual_direction": "Ultra-realistic textures combined with surreal elements, such as realistic jelly effects or detailed environmental transformations",
-    "urgent_title_formula": "The Day [Event/Character] [Unique Twist]... \ud83c\udf0c",
+    "new_hook_style": "Mystical creature arrivals followed by mesmerizing transformations",
+    "new_visual_direction": "Ultra-realistic textures combined with surreal elements like detailed environmental transformations",
+    "urgent_title_formula": "The Day [Event] Transformed into [Surreal Element]",
     "confidence": "high",
-    "data_rationale": "This recommendation is driven by the identification of a competitor gap in 'surreal AI travel guides' and the observed popularity of combining realism with surrealism."
+    "data_rationale": "The recommendation is driven by the trending interest in 'mythical sky events' and the uncovered competitor gap in 'surreal AI travel guides' combined with currently popular visual styles."
   }
 }
