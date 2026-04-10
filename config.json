@@ -26,8 +26,9 @@
     "top_performing_themes": [
       "surreal caf\u00e9 scenes",
       "dreamscape transformations",
-      "impossible architecture",
-      "ai-generated paradoxes"
+      "ai-generated paradoxes",
+      "surreal AI travel guides",
+      "mythical sky events"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -84,8 +85,8 @@
       "questions that demand answers",
       "scenes that look physically impossible"
     ],
-    "emergency_hook_style": "Incredible slow-motion effects combined with mystical creature arrivals",
-    "emergency_title_formula": "The Day [Event] Transformed the [Setting]... [Iconic Emoji]"
+    "emergency_hook_style": "Mesmerizing transformations intertwined with mystical creature arrivals",
+    "emergency_title_formula": "The Day [Event/Creature] Transformed [Everyday Scene]... [Emoji]"
   },
   "output_dir": "./videos",
   "privacy": "public",
@@ -144,21 +145,21 @@
   },
   "performance_alert": {
     "active": true,
-    "triggered_at": "2026-04-09",
-    "consecutive_low": 14,
+    "triggered_at": "2026-04-10",
+    "consecutive_low": 16,
     "threshold_views": 100,
-    "diagnosis": "The current content is underperforming due to repetitive themes and lack of engagement with viral trends, especially as the titles lack captivating hooks and the visuals may not be leveraging the trending ultra-realistic surreal style.",
+    "diagnosis": "The current content is underperforming due to repetitive themes and titles that lack a fresh angle, failing to capture interest amidst a saturated market. Additionally, the titles do not effectively leverage trending patterns or compelling hooks that are currently engaging viewers.",
     "pivot_themes": [
       "surreal AI travel guides",
-      "surreal caf\u00e9 scenes"
+      "mythical sky events"
     ],
     "themes_to_abandon": [
       "impossible architecture"
     ],
-    "new_hook_style": "Incredible slow-motion effects combined with mystical creature arrivals",
-    "new_visual_direction": "Ultra-realistic textures with detailed environmental transformations",
-    "urgent_title_formula": "The Day [Event] Transformed the [Setting]... [Iconic Emoji]",
+    "new_hook_style": "Mesmerizing transformations intertwined with mystical creature arrivals",
+    "new_visual_direction": "Ultra-realistic textures combined with surreal elements, focusing on detailed environmental transformations",
+    "urgent_title_formula": "The Day [Event/Creature] Transformed [Everyday Scene]... [Emoji]",
     "confidence": "high",
-    "data_rationale": "The recommendation is driven by the observation that surreal AI travel guides are a competitor gap and surreal caf\u00e9 scenes are currently trending, combined with the identified viral hook patterns and visual style preferences."
+    "data_rationale": "The pivot is driven by current trends showing interest in mythical sky events and the uncovered angle of surreal AI travel guides not yet explored by competitors."
   }
 }
