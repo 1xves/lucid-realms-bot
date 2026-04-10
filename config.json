@@ -25,9 +25,9 @@
   "content_strategy": {
     "top_performing_themes": [
       "surreal caf\u00e9 scenes",
-      "mythical sky events",
-      "surreal AI travel guides",
-      "dreamscape transformations"
+      "dreamscape transformations",
+      "impossible architecture",
+      "ai-generated paradoxes"
     ],
     "hook_style": "curiosity gap \u2014 first frame must be the most visually shocking scene",
     "optimal_length_seconds": 45,
@@ -70,11 +70,10 @@
         "AI animation"
       ],
       "hooks": [
-        "Imagine a world where...",
-        "What if you could...",
-        "Experience the impossible as...",
-        "Found footage from a dimension where...",
-        "This shouldn't exist, but..."
+        "What if...",
+        "POV: You just entered...",
+        "This shouldn't exist but...",
+        "Wait for the twist..."
       ]
     },
     "engagement_cta": "End narration with: 'Subscribe to enter the next realm.' \u2014 also pin a comment: '\ud83c\udf0c Which world would you enter? Comment below \ud83d\udc47'",
@@ -90,44 +89,37 @@
   },
   "output_dir": "./videos",
   "privacy": "public",
-  "last_strategy_update": "2026-04-09",
+  "last_strategy_update": "2026-04-10",
   "strategy_details": {
     "top_performing_themes": [
       "surreal caf\u00e9 scenes",
-      "mythical sky events",
-      "surreal AI travel guides",
+      "dreamscape transformations",
       "impossible architecture",
-      "dreamscape transformations"
+      "ai-generated paradoxes"
     ],
     "hooks_to_use": [
-      "Imagine a world where...",
-      "What if you could...",
-      "Experience the impossible as...",
-      "Found footage from a dimension where...",
-      "This shouldn't exist, but..."
+      "What if...",
+      "POV: You just entered...",
+      "This shouldn't exist but...",
+      "Wait for the twist..."
     ],
     "avoid": [
-      "Using static images without narrative",
-      "Overly abstract concepts with no clear theme",
-      "Vague or generic titles that don't hint at the surreal twist",
-      "Posting inconsistently (kills algorithmic momentum)",
-      "Neglecting community engagement (replies, pinned comments)"
+      "Overly abstract themes without a narrative",
+      "Lack of clear narrative or context",
+      "Generic AI art without distinctive visual style",
+      "Titles longer than 50 characters (Shorts truncate)",
+      "Treating this as a 'series' before proving individual video traction"
     ],
-    "title_formula": "[Hook phrase]: The [Specific Surreal Element] [Verb] [Unexpected Consequence]",
-    "example_titles": [
-      "Imagine a world where: Gravity Falls Upward into Infinite Caf\u00e9s",
-      "Found this dimension where: Cities are Built from Clouds",
-      "What if: The Sky Had Memories?"
-    ],
-    "priority_actions": [
-      "Post 4-5 Shorts weekly minimum (consistency is critical at 0 engagement)",
-      "Focus 60% of content on 'surreal AI travel guides' with strong narrative hooks",
-      "Create 15-second story arcs, not loops (Shorts favor narrative progression)",
-      "Pin comments asking 'What dimension would YOU visit?' to drive engagement metrics",
-      "Analyze watch time retention\u2014optimize for 8-12 second hooks (critical for Shorts algorithm)"
-    ],
-    "monetization_note": "YPP requires 1K subscribers + 10M Shorts views in 90 days. At 20.81 avg views, you need aggressive posting cadence and hook optimization. Focus on CTR and watch time retention as primary growth levers, not just view count.",
-    "critical_gap_identified": "0% engagement rate suggests titles/thumbnails aren't compelling enough for clicks, or content isn't delivering on the hook. Test title variations and ensure first 3 seconds are visually arresting."
+    "title_formula": "[Hook] [Vivid 2-3 Word Scene] \ud83c\udf00\u2728",
+    "priority_action": "CRITICAL: Stop assuming narrative-driven 'series' content will work. At 0% engagement and 19.74 avg views, test HIGH-CONTRAST, VISUALLY ARRESTING individual Shorts (3-5 sec hook, no dialogue). A/B test: (1) Pure visual surrealism with text overlay, (2) Relatable human POV in surreal settings. Analyze which thumbnail/first-frame gets clicks. Series strategy is premature.",
+    "monetization_note": "YPP eligibility requires 1K subscribers + 10M Shorts views in 90 days. Current trajectory: ~4.7 months to 1K subs (unsustainable). Pivot to viral-first mechanics before scaling.",
+    "critical_gaps_in_original_strategy": [
+      "No mention of thumbnail/first-frame optimization (critical for Shorts discovery)",
+      "No testing framework (which hook style actually drives CTR?)",
+      "'Series' approach is premature for a 0-engagement channel",
+      "No competitive analysis (what surreal AI content IS working on Shorts?)",
+      "No posting frequency/timing strategy specified"
+    ]
   },
   "trend_research": {
     "last_updated": "2026-04-03",
