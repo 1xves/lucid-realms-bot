@@ -732,5 +732,28 @@
       "ArtAnimation",
       "NatureFusion"
     ]
+  },
+  {
+    "date": "2026-04-11",
+    "time_utc": "20:03",
+    "slot": "afternoon",
+    "video_id": "lGNOf3MRrwM",
+    "title_a": "When the Caf\u00e9 Met the Sky Whales... \u2615\ud83d\udc0b",
+    "title_b": "A Blend of Coffee and Cosmic Wonders",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "AIart",
+      "surrealism",
+      "cosmic",
+      "skywhales",
+      "dreamscape",
+      "art",
+      "surrealtravel",
+      "mythical",
+      "cafe",
+      "visualnarrative"
+    ]
   }
 ]
