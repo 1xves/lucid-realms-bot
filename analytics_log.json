@@ -707,5 +707,28 @@
       "VisualStorytelling",
       "FantasyArt"
     ]
+  },
+  {
+    "date": "2026-04-11",
+    "time_utc": "15:01",
+    "slot": "morning",
+    "video_id": "X2mqovZMtSQ",
+    "title_a": "When Sky Whales Visit the Caf\u00e9... \u2615\ud83d\udc0b",
+    "title_b": "A Cosmic Caf\u00e9 Under Mythical Skies \ud83c\udf0c\u2728",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "SurrealArt",
+      "AIart",
+      "SkyWhales",
+      "Caf\u00e9Scenes",
+      "Dreamscapes",
+      "MythicalCreatures",
+      "FantasyArt",
+      "VisualJourney",
+      "ArtAnimation",
+      "NatureFusion"
+    ]
   }
 ]
