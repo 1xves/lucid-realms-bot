@@ -755,5 +755,28 @@
       "cafe",
       "visualnarrative"
     ]
+  },
+  {
+    "date": "2026-04-12",
+    "time_utc": "06:15",
+    "slot": "evening",
+    "video_id": "ZaUjFkk6F6Q",
+    "title_a": "When the Caf\u00e9 Met the Sky Whales... \u2615\ud83d\udc0b",
+    "title_b": "A Coffee Break Under Mythical Skies \ud83c\udf0c\u2728",
+    "ab_tested": false,
+    "active_title": "a",
+    "used_motion": false,
+    "tags": [
+      "SurrealArt",
+      "AIArt",
+      "MythicalCreatures",
+      "Caf\u00e9Scenes",
+      "Dreamscapes",
+      "FantasyLandscapes",
+      "SkyWhales",
+      "TechFusion",
+      "ArtisticJourney",
+      "VisualStorytelling"
+    ]
   }
 ]
